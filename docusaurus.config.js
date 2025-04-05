@@ -5,14 +5,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'AgentQ',
-  tagline: 'AI-Powered Test Case Management', // Updated tagline
-  url: 'https://agentq.id', // Replace with your URL
+  tagline: 'AI-Powered Test Case Management', 
+  url: 'https://github.com', 
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
   organizationName: 'agentq-ai',
   projectName: 'agentq', // Replace with your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
