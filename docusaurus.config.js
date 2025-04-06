@@ -6,14 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'AgentQ',
   tagline: 'AI-Powered Test Case Management', 
-  url: 'https://github.com', 
-  baseUrl: '/',
+  url: 'https://agentq-ai.github.io', 
+  baseUrl: '/agentq/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
   organizationName: 'agentq-ai',
-  projectName: 'agentq', // Replace with your repo name.
-  deploymentBranch: 'gh-pages',
+  projectName: 'agentq',
 
   presets: [
     [
@@ -30,7 +29,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
+        }
       }),
     ],
   ],

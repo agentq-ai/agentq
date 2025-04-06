@@ -88,7 +88,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col col--6">
-                <img src="/img/step1.png" alt="Data Preparation" style={{ maxWidth: '100%' }} />
+                <img src={require('@site/static/img/step1.png').default} alt="Data Preparation" style={{ maxWidth: '100%' }} />
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 <div className="col col--6">
-                  <img src="/img/step2.png" alt="Data Processing" style={{ maxWidth: '100%' }} />
+                  <img src={require('@site/static/img/step2.png').default} alt="Data Processing" style={{ maxWidth: '100%' }} />
                 </div>
                 <div className="col col--6">
                   <h1 className={styles.howItWorksSubtitle}>AgentQ analyzes requirements and generates test cases.</h1>
@@ -126,7 +126,7 @@ export default function Home() {
                 </div>
                 </div>
                 <div className="col col--6">
-                  <img src="/img/step3.png" alt="Reviewing Test Cases" style={{ maxWidth: '100%' }} />
+                  <img src={require('@site/static/img/step3.png').default} alt="Reviewing Test Cases" style={{ maxWidth: '100%' }} />
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 <div className="col col--6">
-                  <img src="/img/step4.png" alt="Completion" style={{ maxWidth: '100%' }} />
+                  <img src={require('@site/static/img/step4.png').default} alt="Completion" style={{ maxWidth: '100%' }} />
                 </div>
                 <div className="col col--6">
                   <h1 className={styles.howItWorksSubtitle}>Generate Effective and High-Quality Test Cases.</h1>
