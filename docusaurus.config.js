@@ -1,5 +1,4 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -40,7 +39,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true, // Or true if you want to disable it
-        respectPrefersColorScheme: true, // If you want to respect system preference
+        respectPrefersColorScheme: false, // If you want to respect system preference
       },
       navbar: {
         title: '',
@@ -102,7 +101,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-github-username/agentq', // Replace with your repo URL
+                href: 'https://github.com/agentq-ai/agentq', // Replace with your repo URL
               },
             ],
           },
@@ -111,7 +110,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
       },
     }),
 });

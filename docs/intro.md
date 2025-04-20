@@ -24,12 +24,34 @@ Streamline your testing with AI-driven test case creation and boost efficiency.
 
 Get started with AgentQ Lite in seconds using Docker:
 
+### Preparation (Prerequisite)
+
+1. Make sure you already install <strong>Docker</strong> (latest version recommended) & <strong>PostgreSQL</strong> (version 17 recommended)
+
+2. Create new database with name : <strong>agentq_opensource</strong>
+
+```bash
+CREATE DATABASE agentq_opensource;
+```
+
+3. Pull the latest version agentq image
+
 ```bash
 # Pull the latest version
 docker pull agentqai/agentq-lite:latest
+```
 
-# Run the container (maps to port 80)
-docker run -d -p 80:80 agentqai/agentq-lite
+4. Run the agentq image
+```bash
+# Run the container
+docker run -d -p 80:80 \
+  -e DB_HOST=host.docker.internal or localhost or your_IP \
+  -e DB_PORT=5432 \
+  -e DB_USERNAME=your_db_user \
+  -e DB_PASSWORD=your_db_password \
+  -e DB_DATABASE=agentq_opensource \
+  --name agentq \
+  agentqai/agentq-lite:latest
 ```
 
 ---
