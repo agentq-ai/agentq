@@ -1,17 +1,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 
-// Determine if we're running on GitHub Pages
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'AgentQ',
   tagline: 'AI-Powered Test Case Management',
-  // Set the production URL based on the environment
-  url: isGitHubPages ? 'https://agentq-ai.github.io' : 'https://agentq.id',
-  // Set the baseUrl based on the environment
-  baseUrl: isGitHubPages ? '/agentq/' : '/',
+  url: 'https://agentq.id',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
@@ -41,8 +36,7 @@ const isGitHubPages = process.env.GITHUB_PAGES === 'true';
   // Add custom scripts
   scripts: [
     {
-      // Use the correct path based on the environment
-      src: isGitHubPages ? '/agentq/js/ios-fix.js' : '/js/ios-fix.js',
+      src: '/js/ios-fix.js',
       defer: true,
     },
   ],
