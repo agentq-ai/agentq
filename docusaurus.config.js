@@ -5,8 +5,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 (module.exports = {
   title: 'AgentQ',
   tagline: 'AI-Powered Test Case Management',
-  url: 'https://agentq.id',
-  baseUrl: '/',
+  url: 'https://agentq-ai.github.io',
+  baseUrl: '/agentq/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
@@ -36,7 +36,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   // Add custom scripts
   scripts: [
     {
-      src: '/js/ios-fix.js',
+      src: '/agentq/js/ios-fix.js',
       defer: true,
     },
   ],

@@ -26,7 +26,7 @@ jobs:
         run: |
           # Set the environment variable for GitHub Pages
           export GITHUB_PAGES=true
-          # Use root baseUrl for custom domain
+          # Build with the correct baseUrl for GitHub Pages
           yarn build
 
       # Popular action to deploy to GitHub Pages:
