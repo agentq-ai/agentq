@@ -1,15 +1,24 @@
 // Mobile device fix for navbar toggle
 (function() {
-  // Wait for React hydration to complete
+  // Create the button as early as possible, then ensure it's properly positioned
+  // after React hydration
   function waitForReactHydration(callback) {
-    // Check if the page is fully loaded and React has hydrated
-    if (document.readyState === 'complete') {
-      // Add a small delay to ensure React has fully hydrated
-      setTimeout(callback, 500);
+    // Try to create the button immediately if DOM is ready
+    if (document.readyState !== 'loading') {
+      // Run immediately with a shorter delay
+      callback();
+
+      // Also run again after a delay to ensure proper positioning
+      setTimeout(callback, 200);
     } else {
-      // Wait for the page to fully load
-      window.addEventListener('load', function() {
-        setTimeout(callback, 500);
+      // For very early page load, wait for DOM to be ready
+      document.addEventListener('DOMContentLoaded', function() {
+        callback();
+
+        // Run again after load to ensure everything is positioned correctly
+        window.addEventListener('load', function() {
+          setTimeout(callback, 100);
+        });
       });
     }
   }
@@ -94,18 +103,85 @@
     }
   }
 
-  // Wait for React hydration before adding our custom button
-  waitForReactHydration(addCustomToggleButton);
+  // Function to ensure the button is recreated
+  function ensureCustomToggleButton() {
+    // Check if we're on a mobile device first
+    const isMobile = window.innerWidth < 996 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!isMobile) return;
 
-  // Also handle resize events to ensure our button works after orientation changes
-  window.addEventListener('resize', function() {
-    // Remove any existing custom button
-    const existingButton = document.getElementById('custom-toggle-button');
+    // Check if the navbar exists
+    const navbar = document.querySelector('.navbar');
+    const originalToggleButton = document.querySelector('.navbar__toggle');
+    if (!navbar || !originalToggleButton) return;
+
+    // Check if our custom button already exists
+    let existingButton = document.getElementById('custom-toggle-button');
+
+    // If button exists but is not visible or not in the DOM, remove it
     if (existingButton) {
-      existingButton.remove();
+      if (!document.body.contains(existingButton) ||
+          existingButton.offsetParent === null) {
+        existingButton.remove();
+        existingButton = null;
+      }
     }
 
-    // Add a new button with the correct positioning
-    addCustomToggleButton();
+    // Only create a new button if needed
+    if (!existingButton) {
+      addCustomToggleButton();
+    }
+  }
+
+  // Wait for React hydration before adding our custom button initially
+  waitForReactHydration(addCustomToggleButton);
+
+  // Handle resize events to ensure our button works after orientation changes
+  window.addEventListener('resize', ensureCustomToggleButton);
+
+  // Listen for Docusaurus navigation events to handle client-side routing
+  document.addEventListener('click', function(e) {
+    // Check if the click was on a navigation link
+    const link = e.target.closest('a');
+    if (link && link.getAttribute('href') && !link.getAttribute('href').startsWith('http')) {
+      // This is likely an internal navigation link
+      // Add a small delay to ensure the navigation completes
+      setTimeout(ensureCustomToggleButton, 300);
+    }
+  });
+
+  // Additional listener for Docusaurus content changes
+  // This uses a MutationObserver to detect DOM changes in the content area
+  // Use a debounce mechanism to prevent too many button recreations
+  let mutationTimeout;
+  const contentObserver = new MutationObserver(function() {
+    // Clear any pending timeout
+    if (mutationTimeout) {
+      clearTimeout(mutationTimeout);
+    }
+
+    // Set a new timeout to ensure the button after DOM changes settle
+    mutationTimeout = setTimeout(ensureCustomToggleButton, 50);
+  });
+
+  // Start observing once the page is loaded
+  waitForReactHydration(function() {
+    // Only observe the navbar and main content areas
+    const navbar = document.querySelector('.navbar');
+    const mainContent = document.querySelector('main');
+
+    if (navbar) {
+      contentObserver.observe(navbar, {
+        childList: true,
+        subtree: false,
+        attributes: true
+      });
+    }
+
+    if (mainContent) {
+      contentObserver.observe(mainContent, {
+        childList: true,
+        subtree: false
+      });
+    }
   });
 })();
