@@ -155,6 +155,12 @@ export default function Home() {
         <section className={styles.getStarted}>
           <div className="container">
             <h2>Trusted and chosen by companies</h2>
+            <div className={styles.logos}>
+              <img src={require('@site/static/img/company-logos/xapiens.png').default} alt="Amazon" style={{ width: 250 }} />
+              {/* <img src={require('@site/static/img/company-logos/google.png').default} alt="Google" />
+              <img src={require('@site/static/img/company-logos/microsoft.png').default} alt="Microsoft" />
+              <img src={require('@site/static/img/company-logos/ibm.png').default} alt="IBM" /> */}
+            </div>
             <p></p>
             {/* <div className={styles.buttons}>
               <Link
