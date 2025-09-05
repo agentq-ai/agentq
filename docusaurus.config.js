@@ -12,6 +12,10 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   favicon: 'img/logo.png',
   organizationName: 'agentq-ai',
   projectName: 'agentq',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   plugins: [
     [
