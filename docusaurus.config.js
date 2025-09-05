@@ -153,7 +153,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PT QUALITY AGENT TECHNOLOGIES - AgentQ.`, // Update copyright
+        copyright: `Copyright © ${new Date().getFullYear()} 2025 PT QUALITY AGENT TECHNOLOGIES`, // Update copyright
       },
       prism: {
         theme: lightCodeTheme,
