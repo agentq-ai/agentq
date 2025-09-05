@@ -13,6 +13,16 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   organizationName: 'agentq-ai',
   projectName: 'agentq',
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-JVSJ3Q22KF',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -34,6 +44,17 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   ],
 
   // Add custom scripts
+  scripts: [
+    {
+      src: '/agentq/js/ios-fix.js',
+      defer: true,
+    },
+    {
+      src: '/agentq/js/workflow-slider.js',
+      defer: true,
+    },
+  ],
+
   scripts: [
     {
       src: '/agentq/js/ios-fix.js',
@@ -101,20 +122,16 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
             items: [
               {
                 label: 'support@agentq.id',
-                href: 'mailto:support@agentq.id', // Replace with your repo URL
+                href: 'mailto:support@agentq.id',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/agentq-ai/agentq', // Replace with your repo URL
+                href: 'https://github.com/agentq-ai/agentq',
               },
               {
                 label: 'Discord',
@@ -122,8 +139,21 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
               },
             ],
           },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Terms of Service',
+                to: '/terms',
+              },
+              {
+                label: 'Privacy Policy',
+                to: '/privacy',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AgentQ.`, // Update copyright
+        copyright: `Copyright © ${new Date().getFullYear()} PT QUALITY AGENT TECHNOLOGIES - AgentQ.`, // Update copyright
       },
       prism: {
         theme: lightCodeTheme,

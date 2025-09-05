@@ -386,6 +386,28 @@
   text-align: center;
 }
 
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.logos img {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 /* Modal Styles */
 .modalOverlay {
   position: fixed;
