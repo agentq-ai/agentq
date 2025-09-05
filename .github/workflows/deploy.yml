@@ -34,8 +34,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # Use the personal access token with repo scope
-          personal_token: ${{ secrets.PAT_GITHUB_TOKEN }}
+          # Use the built-in GitHub token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./build
           # The following lines assign commit authorship to the official
