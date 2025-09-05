@@ -5,29 +5,40 @@ on:
     branches:
       - main
 
+# Add permissions for GitHub token
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: yarn
 
+      - name: Clear yarn cache
+        run: yarn cache clean
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Clear Docusaurus cache
+        run: yarn clear
+
       - name: Build website
-        run: |
-          # Set the environment variable for GitHub Pages
-          export GITHUB_PAGES=true
-          # Build with the correct baseUrl for GitHub Pages
-          yarn build
+        run: yarn build
+        env:
+          GITHUB_PAGES: true
+          NODE_OPTIONS: "--max_old_space_size=4096"
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
