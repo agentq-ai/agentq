@@ -12,10 +12,6 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   favicon: 'img/logo.png',
   organizationName: 'agentq-ai',
   projectName: 'agentq',
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   plugins: [
     [
@@ -51,21 +47,6 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   scripts: [
     {
       src: '/agentq/js/ios-fix.js',
-      defer: true,
-    },
-    {
-      src: '/agentq/js/workflow-slider.js',
-      defer: true,
-    },
-  ],
-
-  scripts: [
-    {
-      src: '/agentq/js/ios-fix.js',
-      defer: true,
-    },
-    {
-      src: '/agentq/js/workflow-slider.js',
       defer: true,
     },
   ],
