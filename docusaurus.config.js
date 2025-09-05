@@ -13,6 +13,16 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   organizationName: 'agentq-ai',
   projectName: 'agentq',
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-JVSJ3Q22KF',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -39,6 +49,21 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
       src: '/agentq/js/ios-fix.js',
       defer: true,
     },
+    {
+      src: '/agentq/js/workflow-slider.js',
+      defer: true,
+    },
+  ],
+
+  scripts: [
+    {
+      src: '/agentq/js/ios-fix.js',
+      defer: true,
+    },
+    {
+      src: '/agentq/js/workflow-slider.js',
+      defer: true,
+    },
   ],
 
   themeConfig:
@@ -51,6 +76,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
       },
       navbar: {
         title: '',
+        hideOnScroll: false,
         logo: {
           alt: 'AgentQ Logo',
           src: 'img/logo.png',
@@ -70,11 +96,6 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
           {
             href: 'https://github.com/agentq-ai/agentq',
             label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://discord.gg/5Kn7T8QP',
-            label: 'Discord',
             position: 'right',
           },
           {
@@ -101,29 +122,38 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
             items: [
               {
                 label: 'support@agentq.id',
-                href: 'mailto:support@agentq.id', // Replace with your repo URL
+                href: 'mailto:support@agentq.id',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/agentq-ai/agentq', // Replace with your repo URL
+                href: 'https://github.com/agentq-ai/agentq',
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/5Kn7T8QP',
+                href: 'https://discord.gg/YEExafVfeg',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Terms of Service',
+                to: '/terms',
+              },
+              {
+                label: 'Privacy Policy',
+                to: '/privacy',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AgentQ.`, // Update copyright
+        copyright: `Copyright © ${new Date().getFullYear()} 2025 PT QUALITY AGENT TECHNOLOGIES`, // Update copyright
       },
       prism: {
         theme: lightCodeTheme,
