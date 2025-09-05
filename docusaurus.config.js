@@ -13,6 +13,12 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   organizationName: 'agentq-ai',
   projectName: 'agentq',
 
+  // Add i18n configuration
+  i18n: {
+  defaultLocale: 'en',
+  locales: ['en'],
+  },
+
   plugins: [
     [
       '@docusaurus/plugin-google-gtag',
@@ -47,6 +53,11 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
   scripts: [
     {
       src: '/agentq/js/ios-fix.js',
+      defer: true,
+    },
+
+    {
+      src: '/agentq/js/workflow-slider.js',
       defer: true,
     },
   ],
