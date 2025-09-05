@@ -39,6 +39,10 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
       src: '/agentq/js/ios-fix.js',
       defer: true,
     },
+    {
+      src: '/agentq/js/workflow-slider.js',
+      defer: true,
+    },
   ],
 
   themeConfig:
@@ -51,6 +55,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
       },
       navbar: {
         title: '',
+        hideOnScroll: false,
         logo: {
           alt: 'AgentQ Logo',
           src: 'img/logo.png',
@@ -70,11 +75,6 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
           {
             href: 'https://github.com/agentq-ai/agentq',
             label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://discord.gg/5Kn7T8QP',
-            label: 'Discord',
             position: 'right',
           },
           {
@@ -118,7 +118,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/5Kn7T8QP',
+                href: 'https://discord.gg/6dArs9tpfm',
               },
             ],
           },
