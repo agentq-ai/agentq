@@ -1,52 +1,50 @@
 # AgentQ Versions and Pricing
 
-AgentQ comes in two different versions to suit your needs: Self-Hosted Free Version and Enterprise Cloud. Below is a detailed comparison of both versions.
+AgentQ offers two versions to suit different needs: Self-Hosted Free Version and Enterprise Cloud. Choose the version that best matches your requirements.
 
-## Version Comparison
+## Feature Comparison
 
-### Self-Hosted Free Version (AgentQ Lite)
-
-The free version of AgentQ is perfect for teams who want to self-host their testing solution and are comfortable managing their own infrastructure.
-
-#### Features
-- ✅ Basic test case management
-- ✅ Manual test case creation
-- ✅ Docker-based deployment
-- ✅ Local database integration
-- ✅ Basic project management
-- ✅ Self-hosted infrastructure
-- ✅ Confluence integration
-
-#### Installation Requirements
-- Docker (latest version recommended)
-- PostgreSQL (version 17 recommended)
-- Local or on-premise hosting capability
-
-#### Getting Started with Self-Hosted
-See our [Installation Guide](/docs/intro#installation-with-docker) for detailed setup instructions.
-
-### Enterprise Cloud Version
-
-The Enterprise Cloud version offers advanced features, managed infrastructure, and additional capabilities for professional testing teams.
-
-#### Additional Features
-Everything in Free version, plus:
-- ✅ AI-powered test case generation
-- ✅ Advanced automation capabilities
-- ✅ Token-based usage system
-- ✅ Top-up functionality for tokens
-- ✅ Cloud-hosted infrastructure
-- ✅ Priority support
-- ✅ Enhanced security features
-- ✅ Advanced reporting
-- ✅ Multiple user roles
-- ✅ Team collaboration features
-- ✅ Extended API access
-- ✅ Automatic updates and maintenance
-
-![Enterprise Features](/img/tutorial/Akses%20Api%20Key%20and%20Update%20Plan/select%20enterprise%20dan%20click%20button%20upgrade.png)
-
-## How to Choose
+| Feature Category | Feature | Free (Self-Hosted) | Enterprise (Cloud) |
+|-----------------|---------|-------------------|-------------------|
+| **Installation & Infrastructure** |
+| | Self-hosted Deployment | ✅ | ❌ |
+| | Cloud-hosted Solution | ❌ | ✅ |
+| | Docker Support | ✅ | ✅ |
+| | Automatic Updates | ❌ | ✅ |
+| **Test Case Management** |
+| | Basic Test Case Creation | ✅ | ✅ |
+| | CSV Import/Export | ✅ | ✅ |
+| | Project Organization | ✅ | ✅ |
+| | Team Collaboration | Basic | Advanced |
+| **AI Features** |
+| | Basic AI Test Generation | ✅ | ✅ |
+| | Advanced AI Capabilities | ❌ | ✅ |
+| | PRD-based Test Creation | Limited | Full |
+| | AI Test Suggestions | Limited | Full |
+| **Automation** |
+| | No-Code Test Automation | ❌ | ✅ |
+| | Visual Test Builder | ❌ | ✅ |
+| | Test Execution Recordings | ❌ | ✅ |
+| | Automated Reports | ❌ | ✅ |
+| **Security Testing** |
+| | DAST Testing | ❌ | ✅ |
+| | Vulnerability Scanning | ❌ | ✅ |
+| | Security Reports | ❌ | ✅ |
+| **API & Integration** |
+| | Basic API Access | ✅ | ✅ |
+| | Extended API Features | ❌ | ✅ |
+| | Jira Integration | ✅ | ✅ |
+| | Migration from Other Tools | ❌ | ✅ |
+| **Support & Resources** |
+| | Community Support | ✅ | ✅ |
+| | Priority Support | ❌ | ✅ |
+| | Documentation Access | ✅ | ✅ |
+| | Training Resources | Basic | Advanced |
+| **Usage & Scaling** |
+| | Token System | ❌ | ✅ |
+| | Token Top-up | ❌ | ✅ |
+| | User Management | Basic | Advanced |
+| | Concurrent Tests | Unlimited | Unlimited |
 
 ### Choose Self-Hosted Free Version If You:
 - Want to host the solution on your own infrastructure
@@ -62,6 +60,7 @@ Everything in Free version, plus:
 - Need scalable resources with token top-up option
 - Want priority support and automatic updates
 - Have multiple teams collaborating on test cases
+- Need help migrating from other test case management tools
 
 ## Upgrading to Enterprise
 
@@ -93,5 +92,6 @@ After upgrading, you'll have access to all Enterprise features, including token 
 - Advanced documentation
 - Training resources
 - Technical consultation
+- Free migration assistance from other test case management tools Like TestRail, Testmo, Qase etc.
 
 For any questions about our versions or pricing, please contact us at [support@agentq.id](mailto:support@agentq.id)
