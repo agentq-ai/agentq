@@ -8,25 +8,25 @@ Learn how to create test cases automatically using AI in AgentQ.
 
 ## Steps
 
-### 1. Upload PRD Document
-First, you need to upload your PRD or requirements documentation that will be used as a basis for generating test cases.
+### 1. Generate Test Cases
+Click the "Generate with AI" button to start creating test cases based on your requirements.
+
+![Generate with AI Button](/img/tutorial/AI%20Test%20Case%20Creation/click%20button%20generate%20with%20ai.png)
+
+### 2. Upload PRD Document
+Next, upload your PRD or requirements documentation that will be used as a basis for generating test cases.
 
 ![Upload PRD Example](/img/tutorial/AI%20Test%20Case%20Creation/contoh%20lampirkan%20prd%20.png)
-
-### 2. AI Processing
-Once you've uploaded the document, the AI will begin processing and analyzing your requirements.
-
-![AI Processing Data](/img/tutorial/AI%20Test%20Case%20Creation/data%20prosesing.png)
 
 ### 3. Reading PRD
 The system will read and understand your PRD to generate relevant test cases.
 
 ![Reading PRD Process](/img/tutorial/AI%20Test%20Case%20Creation/proses%20membaca%20prd.png)
 
-### 4. Generate Test Cases
-Click the "Generate with AI" button to start creating test cases based on your requirements.
+### 4. AI Processing
+The AI will process and analyze your requirements to generate appropriate test cases.
 
-![Generate with AI Button](/img/tutorial/AI%20Test%20Case%20Creation/click%20button%20generate%20with%20ai.png)
+![AI Processing Data](/img/tutorial/AI%20Test%20Case%20Creation/data%20prosesing.png)
 
 ### 5. Review Generated Test Cases
 After generation, you can preview the test cases. You have options to:
