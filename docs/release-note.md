@@ -5,6 +5,34 @@ sidebar_position: 2
 # Release Notes
 
 
+## Version 1.9
+
+#### New Features (Enterprise)
+- **Product Document Analysis (MVP)** - AI-powered analysis of product documents with insight generation
+  - Automated document processing and analysis
+  - Enhanced AI test case accuracy from 85% to 90-95%
+  - Structured insights and recommendation engine
+  - Professional report generation
+  - Multi-format support (PDF, DOC, DOCX, TXT)
+  - *Note: Currently analysis-only, document editing planned for v2*
+
+- **No-Code Automation Testing** - Create automated tests without coding
+  - Visual test builder with intuitive interface
+  - Automated test execution with video recordings
+  - Support for functional testing scenarios
+  - Reusable test components and interactions
+
+- **Enhanced Security Testing (DAST)** - Dynamic Application Security Testing
+  - Automated vulnerability scanning
+  - Real-time security testing logs
+  - Detailed security reports with risk assessment
+  - Multiple security test types support
+
+#### Improvements
+- **Enhanced Documentation Structure** - Reorganized documentation with clear separation between Free and Enterprise features
+- **Migration Support** - Free migration assistance from other test case management tools (Enterprise)
+- **Improved Navigation** - Better sidebar organization for easier feature discovery
+
 ## Version 1.8
 
 #### Improvement
