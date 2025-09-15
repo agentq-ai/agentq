@@ -52,6 +52,11 @@
           type: 'doc',
           id: 'security-testing',
           label: 'Security Testing'
+        },
+        {
+          type: 'doc',
+          id: 'product-document-analysis',
+          label: 'Product Document Analysis'
         }
       ]
     },

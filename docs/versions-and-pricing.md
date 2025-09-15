@@ -21,6 +21,7 @@ AgentQ offers two versions to suit different needs: Self-Hosted Free Version and
 | | Advanced AI Capabilities | ❌ | ✅ |
 | | PRD-based Test Creation | Limited | Full |
 | | AI Test Suggestions | Limited | Full |
+| | Product Document Analysis | ❌ | ✅ |
 | **Automation** |
 | | No-Code Test Automation | ❌ | ✅ |
 | | Visual Test Builder | ❌ | ✅ |
