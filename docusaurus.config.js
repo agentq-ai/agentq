@@ -79,10 +79,9 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/service',
+            label: 'Service',
             position: 'left',
-            label: 'Docs',
           },
           // {
           //   to: '/blog',
