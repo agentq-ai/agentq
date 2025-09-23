@@ -1,0 +1,280 @@
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+    max-width: 100%;
+  }
+  .gridMain {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridMain > div {
+    display: block !important;
+  }
+  .card {
+    margin-bottom: 1.2rem;
+    padding: 0.7rem;
+  }
+  .heroTitle {
+    font-size: 1.3rem;
+  }
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+}
+
+.roiPage {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+/* Landing page hero style */
+.roiPage {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+.heroSection {
+  background: #18181b;
+  color: white;
+  padding: 80px 0 40px 0;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.primaryBtn {
+  background: #C73939;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.primaryBtn:hover {
+  background: #89190a;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+/* ...existing code... */
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.label {
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background: #f8f9fa;
+  margin-bottom: 0.2rem;
+  transition: border 0.2s;
+}
+.input:focus {
+  outline: none;
+  border: 1.5px solid #6366f1;
+}
+.slider {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.sliderLabel {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.presetButtons {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+.presetConservative {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.presetConservative:hover {
+  background: #4f46e5;
+}
+.presetAggressive {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.presetAggressive:hover {
+  background: #16a34a;
+}
+.presetReset {
+  background: #e5e7eb;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.presetReset:hover {
+  background: #d1d5db;
+}
+.tip {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 1.2rem;
+}
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.resultItem {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #f3f4f6;
+}
+.resultItemAlt {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #f3f4f6;
+}
+.resultLabel {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+.resultValue {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+}
+.hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 1.2rem 0;
+}
+.quickSummaryTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+.summary {
+  font-size: 0.98rem;
+  color: #666;
+  margin-bottom: 0.7rem;
+}
+.actionButtons {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+/* Register button styled to match CTA 'Try AgentQ Free' */
+.downloadBtn {
+  background: #C73939;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(199,57,57,0.08);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.downloadBtn:hover {
+  background: #89190a;
+  transform: translateY(-2px);
+}
+.copyBtn {
+  background: #e5e7eb;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.copyBtn:hover {
+  background: #d1d5db;
+}
+.footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center;
+}

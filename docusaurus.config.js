@@ -78,12 +78,6 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
           src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          },
           // {
           //   to: '/blog',
           //   label: 'Blog',
@@ -105,11 +99,15 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Resources',
             items: [
               {
                 label: 'Installation',
                 to: '/docs/intro',
+              },
+              {
+                label: 'AgentQ Calculator',
+                to: '/roi-calculator',
               },
             ],
           },
