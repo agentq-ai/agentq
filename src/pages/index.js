@@ -23,8 +23,8 @@ function HomepageHeader() {
               <a href="https://agentq.id/login" className="button button--primary button--lg" target="_blank" rel="noopener noreferrer">
                 Try AgentQ Free
               </a>
-              <a href="https://discord.gg/6dArs9tpfm" className="button button--secondary button--lg" style={{ marginLeft: '1rem' }} target="_blank" rel="noopener noreferrer">
-                Join Discord
+              <a href="https://koalendar.com/e/meet-with-niar" className="button button--secondary button--lg" style={{ marginLeft: '1rem' }} target="_blank" rel="noopener noreferrer">
+                Demo
               </a>
             </div>
             <p className={styles.heroMetrics}>
