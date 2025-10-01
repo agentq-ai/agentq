@@ -109,6 +109,10 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
                 label: 'AgentQ Calculator',
                 to: '/roi-calculator',
               },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/agentq-ai/agentq',
+              },
             ],
           },
           {
@@ -118,18 +122,18 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
                 label: 'support@agentq.id',
                 href: 'mailto:support@agentq.id',
               },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/YEExafVfeg',
+              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/agentq-ai/agentq',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/YEExafVfeg',
+                label: 'Career',
+                to: '/karir',
               },
             ],
           },
